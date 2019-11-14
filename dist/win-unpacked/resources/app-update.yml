@@ -1,0 +1,4 @@
+owner: SimonStiegler
+repo: hmi
+provider: github
+updaterCacheDirName: hmi-updater

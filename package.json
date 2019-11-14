@@ -3,29 +3,24 @@
 	"version": "0.1.0",
 	"private": true,
 	"main": "public/electron.js",
+	"author": "Simon Stiegler",
+	"homepage": "./",
 	"dependencies": {
 		"electron-is-dev": "^1.1.0",
 		"react": "^16.11.0",
 		"react-dom": "^16.11.0",
-		"react-scripts": "3.2.0"
+		"react-scripts": "3.2.0",
+		"semantic-ui-react": "^0.88.1",
+		"styled-components": "^4.4.1"
 	},
 	"scripts": {
 		"start": "react-scripts start",
-		"build": {
-			"appId": "com.example.electron-cra",
-			"files": [
-				"build/**/*",
-				"node_modules/**/*"
-			],
-			"directories": {
-				"buildResources": "assets"
-			}
-		},
-		"electron-pack": "build --em.main=build/electron.js",
-		"preelectron-pack": "yarn build",
+		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"electron-dev": "concurrently \"yarn start\" \"wait-on http://localhost:3000 && electron .\""
+		"electron-build": "electron-builder",
+		"dev": "concurrently \"yarn start\" \"wait-on http://localhost:3000 && electron .\"",
+		"buildApp": "yarn build && yarn electron-build"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
@@ -47,5 +42,15 @@
 		"electron": "^7.1.1",
 		"electron-builder": "^22.1.0",
 		"wait-on": "^3.3.0"
+	},
+	"build": {
+		"appId": "com.example.electron-cra",
+		"files": [
+			"build/**/*",
+			"node_modules/**/*"
+		],
+		"directories": {
+			"buildResources": "assets"
+		}
 	}
 }
