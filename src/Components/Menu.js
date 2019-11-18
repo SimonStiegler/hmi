@@ -4,6 +4,7 @@ import { Button } from 'semantic-ui-react';
 import Hand from '../pictures/Hand';
 import Home from '../pictures/Home';
 import Orient from '../pictures/Orient.png';
+import Jog from '../pictures/Jog';
 const Grid = styled.div`
 	display: grid;
 	grid-template-rows: 60px;
@@ -12,11 +13,6 @@ const Grid = styled.div`
 	grid-auto-columns: 1fr 1fr 1fr 1fr;
 	grid-column-gap: 5px;
 	grid-template-areas: 'Hand Orient Home Jog';
-`;
-const Elements = styled(Button)`
-	grid-area: ${props => props.children};
-	justify-self: stretch;
-	align-self: center;
 `;
 const BtHand = styled(Button)`
 	justify-self: stretch;
@@ -65,6 +61,24 @@ const BtOrient = styled(Button)`
 		transform: translateY(7px);
 	}
 `;
+const BtJog = styled(Button)`
+	justify-self: stretch;
+	grid-area: Jog;
+	padding: 0px !important;
+	align-self: center;
+	& > svg {
+		width: 45px;
+		float: left;
+		height: 40px;
+		margin-left: 2px;
+	}
+	& > p {
+		display: inline-block;
+		font-size: 22px;
+		transform: translateY(5px);
+		float: left;
+	}
+`;
 const Menu = () => {
 	return (
 		<Grid>
@@ -80,7 +94,10 @@ const Menu = () => {
 				<Home></Home>
 				<p>Home</p>
 			</BtHome>
-			<Elements>Jog</Elements>
+			<BtJog>
+				<Jog></Jog>
+				<p>Jog</p>
+			</BtJog>
 		</Grid>
 	);
 };
