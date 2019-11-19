@@ -6,6 +6,7 @@ const Hand = ({ style }) => {
 			dataName='Layer 1'
 			xmlns='http://www.w3.org/2000/svg'
 			viewBox='30 20 40 50'
+			style={style}
 		>
 			<defs></defs>
 			<title>robot-hand</title>

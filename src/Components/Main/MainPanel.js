@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Button } from 'semantic-ui-react';
-import Settings from '../pictures/settings';
+import Settings from '../../pictures/settings';
 import Main from './Main';
 import Override from './Override';
 import Menu from './Menu';
+import Program from './Program';
 const BoxMainPanel = styled.div`
 	text-align: center;
 	border-bottom: solid 1px white;
@@ -46,6 +47,7 @@ const MainPanel = () => {
 			<Main></Main>
 			<Override></Override>
 			<Menu></Menu>
+			<Program></Program>
 		</React.Fragment>
 	);
 };

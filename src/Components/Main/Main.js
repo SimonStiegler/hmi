@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Settings from '../pictures/settings';
 import { Button, Select } from 'semantic-ui-react';
 const Grid = styled.div`
 	display: grid;
