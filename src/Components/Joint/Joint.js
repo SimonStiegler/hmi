@@ -104,6 +104,7 @@ const Joint = () => {
 				defaultValue={50}
 			></JointItem>
 			<JointItem
+				line='none'
 				min='0'
 				max='100'
 				width='100px'

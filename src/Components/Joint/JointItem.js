@@ -7,7 +7,10 @@ const Grid = styled.div`
 	grid-template-columns: 90px 35px 145px 10px 1fr 35px;
 	padding-right: 20px;
 	padding-bottom: 10px;
-	border-bottom: solid 1px white;
+
+	border-bottom: ${props =>
+		props.line ? props.line : 'solid 1px white'};
+
 	grid-template-areas:
 		'J1 . Text . SetJoint . '
 		'J1 BtMinus Range Range Range BtPlus  ';
@@ -100,7 +103,7 @@ const JoinItem = props => {
 		}
 	};
 	return (
-		<Grid>
+		<Grid line={props.line}>
 			<StyleJoint width={props.width}>
 				{props.picture}
 			</StyleJoint>
