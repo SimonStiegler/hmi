@@ -4,8 +4,7 @@ import { Button } from 'semantic-ui-react';
 const Grid = styled.div`
 	display: grid;
 	grid-template-rows: 55px 30px;
-	grid-template-columns: 70px 35px 145px 10px 1fr 35px;
-	padding-left: 20px;
+	grid-template-columns: 90px 35px 145px 10px 1fr 35px;
 	padding-right: 20px;
 	padding-bottom: 10px;
 	border-bottom: solid 1px white;
@@ -76,8 +75,8 @@ const SetOverride = styled(Button)`
 const StyleJoint = styled.div`
 	grid-area: J1;
 	& > svg {
-		height: 100px;
-		width: 50px;
+		width: 100%;
+		height: auto;
 	}
 `;
 const JoinItem = props => {
@@ -102,7 +101,9 @@ const JoinItem = props => {
 	};
 	return (
 		<Grid>
-			<StyleJoint>{props.picture}</StyleJoint>
+			<StyleJoint width={props.width}>
+				{props.picture}
+			</StyleJoint>
 			<TextOverride>{props.text}</TextOverride>
 			<SetOverride>{range}</SetOverride>
 			<Range

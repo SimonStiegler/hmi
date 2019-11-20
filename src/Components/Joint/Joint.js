@@ -53,42 +53,66 @@ const Joint = () => {
 				min='0'
 				max='100'
 				text='Joint 1:'
-				picture={<Joint1></Joint1>}
+				picture={
+					<Joint1
+						style={{ height: '95px', paddingTop: '4px' }}
+					></Joint1>
+				}
 				defaultValue={50}
+				width='50px'
 			></JointItem>
 			<JointItem
 				min='0'
 				max='100'
 				text='Joint 2:'
-				picture={<Joint2></Joint2>}
+				width='100px'
+				picture={
+					<Joint2 style={{ paddingTop: '4px' }}></Joint2>
+				}
 				defaultValue={50}
 			></JointItem>
 			<JointItem
 				min='0'
 				max='100'
+				width='100px'
 				text='Joint 3:'
-				picture={<Joint3></Joint3>}
+				picture={
+					<Joint3 style={{ paddingTop: '4px' }}></Joint3>
+				}
 				defaultValue={50}
 			></JointItem>
 			<JointItem
 				min='0'
 				max='100'
+				width='100px'
 				text='Joint 4:'
-				picture={<Joint4></Joint4>}
+				picture={
+					<Joint4 style={{ paddingTop: '4px' }}></Joint4>
+				}
 				defaultValue={50}
 			></JointItem>
 			<JointItem
 				min='0'
 				max='100'
+				width='100px'
 				text='Joint 5:'
-				picture={<Joint5></Joint5>}
+				picture={
+					<Joint5
+						style={{ height: '95px', paddingTop: '4px' }}
+					></Joint5>
+				}
 				defaultValue={50}
 			></JointItem>
 			<JointItem
 				min='0'
 				max='100'
+				width='100px'
 				text='Joint 6:'
-				picture={<Joint6></Joint6>}
+				picture={
+					<Joint6
+						style={{ height: '95px', paddingTop: '4px' }}
+					></Joint6>
+				}
 				defaultValue={50}
 			></JointItem>
 		</React.Fragment>

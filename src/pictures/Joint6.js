@@ -9,6 +9,7 @@ const Joint6 = ({ style }) => {
 			viewBox='0 0 7 9'
 			width='7'
 			height='9'
+			style={style}
 		>
 			<defs>
 				<path
