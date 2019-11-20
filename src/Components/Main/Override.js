@@ -28,11 +28,24 @@ const Range = styled.input`
 	justify-self: stretch;
 	grid-area: Range;
 	border-radius: 10px;
+	-webkit-appearance: none !important;
+	-webkit-transition: 0.2s !important;
+	height: 25px;
 	&::-moz-range-thumb {
 		width: 22px;
 		height: 25px;
 		border-radius: 10px;
 		background: #173789;
+		cursor: pointer;
+	}
+	&::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		appearance: none;
+		width: 23px;
+		height: 27px;
+		border-radius: 10px !important;
+		background: #173789 !important;
+		border: solid 1px grey;
 		cursor: pointer;
 	}
 `;

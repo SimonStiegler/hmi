@@ -4,17 +4,21 @@
 	"private": true,
 	"main": "public/electron.js",
 	"author": "Simon Stiegler",
-	"homepage": "./",
+	"homepage": "https://github.com/SimonStiegler/Human-Machine-Interface.git",
 	"dependencies": {
 		"electron-is-dev": "^1.1.0",
+		"gh-pages": "^2.1.1",
 		"react": "^16.11.0",
 		"react-dom": "^16.11.0",
 		"react-scripts": "3.2.0",
 		"reactn": "^2.2.4",
+		"semantic-ui-css": "^2.4.1",
 		"semantic-ui-react": "^0.88.1",
 		"styled-components": "^4.4.1"
 	},
 	"scripts": {
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
