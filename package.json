@@ -47,15 +47,5 @@
 		"electron": "^7.1.1",
 		"electron-builder": "^22.1.0",
 		"wait-on": "^3.3.0"
-	},
-	"build": {
-		"appId": "com.example.electron-cra",
-		"files": [
-			"build/**/*",
-			"node_modules/**/*"
-		],
-		"directories": {
-			"buildResources": "assets"
-		}
 	}
 }
