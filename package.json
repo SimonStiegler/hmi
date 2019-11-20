@@ -4,7 +4,7 @@
 	"private": true,
 	"main": "public/electron.js",
 	"author": "Simon Stiegler",
-	"homepage": "https://github.com/SimonStiegler/Human-Machine-Interface.git",
+	"homepage": "https://simonstiegler.github.io/hmi",
 	"dependencies": {
 		"electron-is-dev": "^1.1.0",
 		"gh-pages": "^2.1.1",
