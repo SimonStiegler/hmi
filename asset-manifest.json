@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/hmi/static/css/main.0e996115.chunk.css",
-    "main.js": "/hmi/static/js/main.7891d796.chunk.js",
-    "main.js.map": "/hmi/static/js/main.7891d796.chunk.js.map",
+    "main.js": "/hmi/static/js/main.560cfbe8.chunk.js",
+    "main.js.map": "/hmi/static/js/main.560cfbe8.chunk.js.map",
     "runtime-main.js": "/hmi/static/js/runtime-main.5461d00d.js",
     "runtime-main.js.map": "/hmi/static/js/runtime-main.5461d00d.js.map",
     "static/css/2.8206d80a.chunk.css": "/hmi/static/css/2.8206d80a.chunk.css",
     "static/js/2.7789ba57.chunk.js": "/hmi/static/js/2.7789ba57.chunk.js",
     "static/js/2.7789ba57.chunk.js.map": "/hmi/static/js/2.7789ba57.chunk.js.map",
     "index.html": "/hmi/index.html",
-    "precache-manifest.04d6bb030e3ada70b67b58f6bb74da9e.js": "/hmi/precache-manifest.04d6bb030e3ada70b67b58f6bb74da9e.js",
+    "precache-manifest.b611bfec3f30e35852bfa7e6a0b859ec.js": "/hmi/precache-manifest.b611bfec3f30e35852bfa7e6a0b859ec.js",
     "service-worker.js": "/hmi/service-worker.js",
     "static/css/2.8206d80a.chunk.css.map": "/hmi/static/css/2.8206d80a.chunk.css.map",
     "static/css/main.0e996115.chunk.css.map": "/hmi/static/css/main.0e996115.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.8206d80a.chunk.css",
     "static/js/2.7789ba57.chunk.js",
     "static/css/main.0e996115.chunk.css",
-    "static/js/main.7891d796.chunk.js"
+    "static/js/main.560cfbe8.chunk.js"
   ]
 }

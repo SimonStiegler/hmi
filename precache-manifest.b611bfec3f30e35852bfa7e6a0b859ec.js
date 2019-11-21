@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "173c929935e0f3f407c5ff5781148e2e",
+    "revision": "6b02f93bfd83908c2664d050b6b052cb",
     "url": "/hmi/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hmi/static/css/2.8206d80a.chunk.css"
   },
   {
-    "revision": "af97e637e4485f4b9c9a",
+    "revision": "a77cb4fdfc176e82cb8d",
     "url": "/hmi/static/css/main.0e996115.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hmi/static/js/2.7789ba57.chunk.js"
   },
   {
-    "revision": "af97e637e4485f4b9c9a",
-    "url": "/hmi/static/js/main.7891d796.chunk.js"
+    "revision": "a77cb4fdfc176e82cb8d",
+    "url": "/hmi/static/js/main.560cfbe8.chunk.js"
   },
   {
     "revision": "908d87767c8e29592ed6",
