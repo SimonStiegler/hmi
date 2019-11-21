@@ -30,6 +30,7 @@ const HandBox = styled.div`
 	width: 300px;
 	background-color: rgba(130, 130, 130, 0.05) !important;
 	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3) !important;
+	height: auto;
 `;
 const MainBox = styled.div`
 	color: white;
@@ -59,6 +60,7 @@ const JointBox = styled.div`
 const StyledContainer = styled(Segment.Group)`
 	background-color: transparent !important;
 	margin: 0px !important;
+	height: 640px;
 `;
 function App() {
 	const [joint, setJoint] = useGlobal('Joint');

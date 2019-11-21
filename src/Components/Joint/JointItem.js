@@ -1,6 +1,7 @@
 import React, { useState, useGlobal } from 'reactn';
 import styled from 'styled-components';
 import { Button } from 'semantic-ui-react';
+import NumPad from 'react-numpad';
 const Grid = styled.div`
 	display: grid;
 	grid-template-rows: 55px 30px;
@@ -95,6 +96,9 @@ const StyleJoint = styled.div`
 		height: auto;
 	}
 `;
+// const StyledNumPad = styled(Numpad.Number)`
+
+// `
 const JoinItem = props => {
 	const [range, setRange] = useState(props.defaultValue);
 	const changeRange = e => {
@@ -115,8 +119,18 @@ const JoinItem = props => {
 			setRange(newRange);
 		}
 	};
+
 	return (
 		<Grid line={props.line}>
+			{/* <NumPad.Number
+				onChange={value => {
+					console.log('value', value);
+				}}
+				label={'Total'}
+				placeholder={'my placeholder'}
+				value={100}
+				decimal={2}
+			></NumPad.Number> */}
 			<StyleJoint width={props.width}>
 				{props.picture}
 			</StyleJoint>
