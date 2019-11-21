@@ -125,7 +125,7 @@ const Override = props => {
 			<StyledNumPad>
 				<NumPad.Number
 					onChange={value => {
-						if (props.max > value && value > props.min) {
+						if (props.max >= value && value >= props.min) {
 							setRange(value);
 						}
 					}}
