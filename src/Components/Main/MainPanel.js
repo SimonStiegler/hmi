@@ -45,7 +45,11 @@ const MainPanel = () => {
 				></BtSettings>
 			</BoxMainPanel>
 			<Main></Main>
-			<Override></Override>
+			<Override
+				min={0}
+				max={100}
+				defaultValue={50}
+			></Override>
 			<Menu></Menu>
 			<Program></Program>
 		</React.Fragment>

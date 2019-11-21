@@ -80,15 +80,6 @@ const BtMinus = styled(Button)`
 		color: grey !important;
 	}
 `;
-const SetOverride = styled(Button)`
-	grid-area: SetJoint;
-	align-self: stretch;
-	height: 30px;
-	padding: 0px !important;
-	align-self: center;
-	font-size: 30px !important;
-	margin: 0px !important;
-`;
 const StyleJoint = styled.div`
 	grid-area: J1;
 	& > svg {
@@ -96,9 +87,18 @@ const StyleJoint = styled.div`
 		height: auto;
 	}
 `;
-// const StyledNumPad = styled(Numpad.Number)`
-
-// `
+const StyledNumPad = styled.div`
+	grid-area: SetJoint !important;
+	height: 30px;
+	align-self: center;
+	& > span {
+	}
+	& > span > input {
+		font-size: 25px !important;
+		width: 100% !important;
+		border-radius: 5px !important;
+	}
+`;
 const JoinItem = props => {
 	const [range, setRange] = useState(props.defaultValue);
 	const changeRange = e => {
@@ -108,7 +108,8 @@ const JoinItem = props => {
 
 	const increase = () => {
 		if (range < props.max) {
-			const newRange = range + 1;
+			let newRange = range;
+			newRange++;
 			setRange(newRange);
 		}
 	};
@@ -122,20 +123,20 @@ const JoinItem = props => {
 
 	return (
 		<Grid line={props.line}>
-			{/* <NumPad.Number
-				onChange={value => {
-					console.log('value', value);
-				}}
-				label={'Total'}
-				placeholder={'my placeholder'}
-				value={100}
-				decimal={2}
-			></NumPad.Number> */}
+			<StyledNumPad>
+				<NumPad.Number
+					onChange={value => {
+						if (props.max > value && value > props.min) {
+							setRange(value);
+						}
+					}}
+					value={range}
+				></NumPad.Number>
+			</StyledNumPad>
 			<StyleJoint width={props.width}>
 				{props.picture}
 			</StyleJoint>
 			<TextOverride>{props.text}</TextOverride>
-			<SetOverride>{range}</SetOverride>
 			<Range
 				type='range'
 				min={props.min}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Button } from 'semantic-ui-react';
+import NumPad from 'react-numpad';
 
 const Grid = styled.div`
 	display: grid;
@@ -78,31 +79,35 @@ const BtMinus = styled(Button)`
 		color: grey !important;
 	}
 `;
-const SetOverride = styled(Button)`
-	grid-area: SetOverride;
-	align-self: stretch;
+const StyledNumPad = styled.div`
+	grid-area: SetOverride !important;
 	height: 30px;
-	padding: 0px !important;
 	align-self: center;
-	font-size: 30px !important;
-	margin: 0px !important;
+	& > span {
+	}
+	& > span > input {
+		font-size: 25px !important;
+		width: 100% !important;
+		border-radius: 5px !important;
+	}
 `;
 const time = 300;
-const Override = () => {
-	const [range, setRange] = useState(50);
+const Override = props => {
+	const [range, setRange] = useState(props.defaultValue);
 	const changeRange = e => {
 		const value = parseInt(e.target.value, 10);
 		setRange(value);
 	};
 
 	const increase = () => {
-		if (range < 100) {
-			const newRange = range + 1;
+		if (range < props.max) {
+			let newRange = range;
+			newRange++;
 			setRange(newRange);
 		}
 	};
 	const decrease = () => {
-		if (range > 0) {
+		if (range > props.min) {
 			let newRange = range;
 			newRange--;
 			setRange(newRange);
@@ -117,7 +122,16 @@ const Override = () => {
 	return (
 		<Grid>
 			<TextOverride>Override:</TextOverride>
-			<SetOverride>{range}</SetOverride>
+			<StyledNumPad>
+				<NumPad.Number
+					onChange={value => {
+						if (props.max > value && value > props.min) {
+							setRange(value);
+						}
+					}}
+					value={range}
+				></NumPad.Number>
+			</StyledNumPad>
 			<Range
 				type='range'
 				min='0'

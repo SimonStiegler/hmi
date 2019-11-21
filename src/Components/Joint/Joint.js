@@ -50,8 +50,8 @@ const Joint = () => {
 				></Remove>
 			</BoxMainPanel>
 			<JointItem
-				min='0'
-				max='100'
+				min={0}
+				max={100}
 				text='Joint 1:'
 				picture={
 					<Joint1
@@ -62,8 +62,8 @@ const Joint = () => {
 				width='50px'
 			></JointItem>
 			<JointItem
-				min='0'
-				max='100'
+				min={0}
+				max={100}
 				text='Joint 2:'
 				width='100px'
 				picture={
@@ -72,8 +72,8 @@ const Joint = () => {
 				defaultValue={50}
 			></JointItem>
 			<JointItem
-				min='0'
-				max='100'
+				min={0}
+				max={100}
 				width='100px'
 				text='Joint 3:'
 				picture={
@@ -82,8 +82,8 @@ const Joint = () => {
 				defaultValue={50}
 			></JointItem>
 			<JointItem
-				min='0'
-				max='100'
+				min={0}
+				max={100}
 				width='100px'
 				text='Joint 4:'
 				picture={
@@ -92,8 +92,8 @@ const Joint = () => {
 				defaultValue={50}
 			></JointItem>
 			<JointItem
-				min='0'
-				max='100'
+				min={0}
+				max={100}
 				width='100px'
 				text='Joint 5:'
 				picture={
@@ -105,8 +105,8 @@ const Joint = () => {
 			></JointItem>
 			<JointItem
 				line='none'
-				min='0'
-				max='100'
+				min={0}
+				max={100}
 				width='100px'
 				text='Joint 6:'
 				picture={
