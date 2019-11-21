@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/hmi/static/css/main.0e996115.chunk.css",
-    "main.js": "/hmi/static/js/main.560cfbe8.chunk.js",
-    "main.js.map": "/hmi/static/js/main.560cfbe8.chunk.js.map",
+    "main.css": "/hmi/static/css/main.235c89d7.chunk.css",
+    "main.js": "/hmi/static/js/main.dc5c7bb8.chunk.js",
+    "main.js.map": "/hmi/static/js/main.dc5c7bb8.chunk.js.map",
     "runtime-main.js": "/hmi/static/js/runtime-main.5461d00d.js",
     "runtime-main.js.map": "/hmi/static/js/runtime-main.5461d00d.js.map",
     "static/css/2.8206d80a.chunk.css": "/hmi/static/css/2.8206d80a.chunk.css",
     "static/js/2.7789ba57.chunk.js": "/hmi/static/js/2.7789ba57.chunk.js",
     "static/js/2.7789ba57.chunk.js.map": "/hmi/static/js/2.7789ba57.chunk.js.map",
     "index.html": "/hmi/index.html",
-    "precache-manifest.b611bfec3f30e35852bfa7e6a0b859ec.js": "/hmi/precache-manifest.b611bfec3f30e35852bfa7e6a0b859ec.js",
+    "precache-manifest.e91f1a6206fad5702c75e8fabe95bf35.js": "/hmi/precache-manifest.e91f1a6206fad5702c75e8fabe95bf35.js",
     "service-worker.js": "/hmi/service-worker.js",
     "static/css/2.8206d80a.chunk.css.map": "/hmi/static/css/2.8206d80a.chunk.css.map",
-    "static/css/main.0e996115.chunk.css.map": "/hmi/static/css/main.0e996115.chunk.css.map",
+    "static/css/main.235c89d7.chunk.css.map": "/hmi/static/css/main.235c89d7.chunk.css.map",
     "static/media/semantic.min.css": "/hmi/static/media/outline-icons.ef60a4f6.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.5461d00d.js",
     "static/css/2.8206d80a.chunk.css",
     "static/js/2.7789ba57.chunk.js",
-    "static/css/main.0e996115.chunk.css",
-    "static/js/main.560cfbe8.chunk.js"
+    "static/css/main.235c89d7.chunk.css",
+    "static/js/main.dc5c7bb8.chunk.js"
   ]
 }
