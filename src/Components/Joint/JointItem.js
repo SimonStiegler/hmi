@@ -98,6 +98,10 @@ const StyledNumPad = styled.div`
 		width: 100% !important;
 		border-radius: 5px !important;
 	}
+	&.MuiSvgIcon {
+		width: 30px !important;
+		height: 30px !important;
+	}
 `;
 const JoinItem = props => {
 	const [range, setRange] = useState(props.defaultValue);
