@@ -130,6 +130,7 @@ const Override = props => {
 						}
 					}}
 					value={range}
+					position={'startBottomRight'}
 				></NumPad.Number>
 			</StyledNumPad>
 			<Range

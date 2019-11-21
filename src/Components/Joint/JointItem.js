@@ -1,4 +1,4 @@
-import React, { useState, useGlobal } from 'reactn';
+import React, { useState } from 'reactn';
 import styled from 'styled-components';
 import { Button } from 'semantic-ui-react';
 import NumPad from 'react-numpad';
@@ -131,6 +131,7 @@ const JoinItem = props => {
 						}
 					}}
 					value={range}
+					position={'startBottomRight'}
 				></NumPad.Number>
 			</StyledNumPad>
 			<StyleJoint width={props.width}>
