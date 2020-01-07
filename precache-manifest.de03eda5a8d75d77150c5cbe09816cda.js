@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "026cb4b8d757717e2d130e4d757bffbb",
+    "revision": "1e5c7d3ea088de3ccdcf5793636092b2",
     "url": "/hmi/index.html"
   },
   {
-    "revision": "6438efa05a7897a318a3",
-    "url": "/hmi/static/css/2.8206d80a.chunk.css"
+    "revision": "586174b5a258377ff629",
+    "url": "/hmi/static/css/2.e30031ea.chunk.css"
   },
   {
-    "revision": "282c593f7c8e61a496f5",
+    "revision": "bf298716c51a6403c467",
     "url": "/hmi/static/css/main.235c89d7.chunk.css"
   },
   {
-    "revision": "6438efa05a7897a318a3",
-    "url": "/hmi/static/js/2.7789ba57.chunk.js"
+    "revision": "586174b5a258377ff629",
+    "url": "/hmi/static/js/2.2a3e1ac6.chunk.js"
   },
   {
-    "revision": "282c593f7c8e61a496f5",
-    "url": "/hmi/static/js/main.dac9b7ff.chunk.js"
+    "revision": "bf298716c51a6403c467",
+    "url": "/hmi/static/js/main.7c8a6b63.chunk.js"
   },
   {
     "revision": "908d87767c8e29592ed6",
     "url": "/hmi/static/js/runtime-main.5461d00d.js"
+  },
+  {
+    "revision": "998d218adfe482eeff6e02495fad7d79",
+    "url": "/hmi/static/media/Go.998d218a.png"
   },
   {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
