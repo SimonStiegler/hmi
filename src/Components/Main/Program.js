@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Button } from 'semantic-ui-react';
 import Off from '../../pictures/Off';
-import Start from '../../pictures/Start';
+import Play from '../../pictures/Play';
 import End from '../../pictures/End';
 import Reset from '../../pictures/Reset';
 import Back from '../../pictures/Back';
 import Exe from '../../pictures/Exe';
+import Go from '../../pictures/Go.png';
+import Start from '../../pictures/Start';
 
 const hoverColor = 'black';
 const Grid = styled.div`
@@ -31,7 +33,8 @@ const BtServo = styled(Button)`
 		width: 32px;
 		float: left;
 		justify-self: center;
-		transform: translateX(3px);
+		margin-left: 2px;
+		transform: translateY(8px);
 	}
 	& > p {
 		display: inline-block;
@@ -56,8 +59,10 @@ const BtStart = styled(Button)`
 	display: flex !important;
 	/* background-color: red !important; */
 	& > svg {
+		fill: white;
 		width: 40px;
 		height: 45px;
+		margin-right: 1px;
 	}
 	& > p {
 		display: inline-block;
@@ -162,8 +167,8 @@ const BtGo = styled(Button)`
 	height: 50px;
 	display: flex !important;
 	/* Background-color: red !important; */
-	& > svg {
-		width: 25px;
+	& > img {
+		width: 35px;
 		height: 45px;
 		transform: translateY(2px);
 		margin-left: 4px;
@@ -171,7 +176,7 @@ const BtGo = styled(Button)`
 	}
 	& > p {
 		display: inline-block;
-		font-size: 22px;
+		font-size: 25px;
 		line-break: auto;
 		align-self: center;
 	}
@@ -191,11 +196,10 @@ const BtPlay = styled(Button)`
 	display: flex !important;
 	/* Background-color: red !important; */
 	& > svg {
-		width: 25px;
+		width: 40px;
 		height: 45px;
-		transform: translateY(2px);
-		margin-left: 4px;
-		margin-right: 4px;
+		margin-left: 2px;
+		margin-right: -8px;
 	}
 	& > p {
 		display: inline-block;
@@ -219,13 +223,13 @@ const BtExe = styled(Button)`
 	display: flex !important;
 	/* Background-color: red !important; */
 	& > svg {
-		width: 25px;
+		width: 29px;
 		height: 45px;
 		transform: translateY(2px);
 	}
 	& > p {
 		display: inline-block;
-		font-size: 21px;
+		font-size: 20px;
 		line-break: auto;
 		align-self: center;
 	}
@@ -261,11 +265,12 @@ const Program = () => {
 				<p>Back</p>
 			</BtBack>
 			<BtGo>
-				<Start style={{ fill: 'black' }}></Start>
+				<img src={Go}></img>
+				{/* <Start style={{ fill: 'black' }}></Start> */}
 				<p>Go</p>
 			</BtGo>
 			<BtPlay>
-				<Start style={{ fill: 'black' }}></Start>
+				<Play style={{ fill: 'black' }}></Play>
 				<p>Play</p>
 			</BtPlay>
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useGlobal } from 'reactn';
 import styled from 'styled-components';
 import { Button } from 'semantic-ui-react';
 import Settings from '../../pictures/settings';
@@ -25,9 +25,7 @@ const BtSettings = styled(Button)`
 `;
 
 const MainPanel = () => {
-	const test = e => {
-		console.log('image', e);
-	};
+	const [setting, setSetting] = useGlobal('Setting');
 	return (
 		<React.Fragment>
 			<BoxMainPanel>
@@ -36,12 +34,13 @@ const MainPanel = () => {
 					icon={
 						<Settings
 							style={{
-								fill: 'white',
+								fill: setting ? 'blue' : 'white',
 								width: '40px',
 								height: '40px'
 							}}
 						></Settings>
 					}
+					onClick={() => setSetting(!setting)}
 				></BtSettings>
 			</BoxMainPanel>
 			<Main></Main>
